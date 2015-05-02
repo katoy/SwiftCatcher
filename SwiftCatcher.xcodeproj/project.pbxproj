@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C056E9E41AF514A800F3D78F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056E9E31AF514A800F3D78F /* AppDelegate.swift */; };
-		C056E9E61AF514A800F3D78F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056E9E51AF514A800F3D78F /* ViewController.swift */; };
 		C056E9E91AF514A800F3D78F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C056E9E71AF514A800F3D78F /* Main.storyboard */; };
 		C056E9EB1AF514A800F3D78F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C056E9EA1AF514A800F3D78F /* Images.xcassets */; };
 		C056E9EE1AF514A800F3D78F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C056E9EC1AF514A800F3D78F /* LaunchScreen.xib */; };
 		C056E9FA1AF514A800F3D78F /* SwiftCatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056E9F91AF514A800F3D78F /* SwiftCatcherTests.swift */; };
+		C056EA041AF515D500F3D78F /* Gymnopedie No 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C056EA031AF515D500F3D78F /* Gymnopedie No 1.mp3 */; };
+		C056EA071AF5163200F3D78F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056EA061AF5163200F3D78F /* ViewController.swift */; };
+		C056EA091AF5163F00F3D78F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056EA081AF5163F00F3D78F /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		C056E9DE1AF514A800F3D78F /* SwiftCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C056E9E21AF514A800F3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C056E9E31AF514A800F3D78F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C056E9E51AF514A800F3D78F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C056E9E81AF514A800F3D78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C056E9EA1AF514A800F3D78F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C056E9ED1AF514A800F3D78F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C056E9F31AF514A800F3D78F /* SwiftCatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C056E9F81AF514A800F3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C056E9F91AF514A800F3D78F /* SwiftCatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCatcherTests.swift; sourceTree = "<group>"; };
+		C056EA031AF515D500F3D78F /* Gymnopedie No 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gymnopedie No 1.mp3"; sourceTree = "<group>"; };
+		C056EA061AF5163200F3D78F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C056EA081AF5163F00F3D78F /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 		C056E9E01AF514A800F3D78F /* SwiftCatcher */ = {
 			isa = PBXGroup;
 			children = (
+				C056EA051AF515FC00F3D78F /* sound */,
 				C056E9E31AF514A800F3D78F /* AppDelegate.swift */,
-				C056E9E51AF514A800F3D78F /* ViewController.swift */,
+				C056EA081AF5163F00F3D78F /* GameScene.swift */,
+				C056EA061AF5163200F3D78F /* ViewController.swift */,
 				C056E9E71AF514A800F3D78F /* Main.storyboard */,
 				C056E9EA1AF514A800F3D78F /* Images.xcassets */,
 				C056E9EC1AF514A800F3D78F /* LaunchScreen.xib */,
@@ -110,6 +116,14 @@
 				C056E9F81AF514A800F3D78F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C056EA051AF515FC00F3D78F /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				C056EA031AF515D500F3D78F /* Gymnopedie No 1.mp3 */,
+			);
+			name = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C056EA041AF515D500F3D78F /* Gymnopedie No 1.mp3 in Resources */,
 				C056E9E91AF514A800F3D78F /* Main.storyboard in Resources */,
 				C056E9EE1AF514A800F3D78F /* LaunchScreen.xib in Resources */,
 				C056E9EB1AF514A800F3D78F /* Images.xcassets in Resources */,
@@ -212,7 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C056E9E61AF514A800F3D78F /* ViewController.swift in Sources */,
+				C056EA091AF5163F00F3D78F /* GameScene.swift in Sources */,
+				C056EA071AF5163200F3D78F /* ViewController.swift in Sources */,
 				C056E9E41AF514A800F3D78F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
